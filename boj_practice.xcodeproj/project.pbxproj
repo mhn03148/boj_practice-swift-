@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E40DC1172A039F2200646764 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40DC1162A039F2200646764 /* main.swift */; };
+		E40DC11F2A03F9BB00646764 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40DC11E2A03F9BB00646764 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		E40DC1132A039F2200646764 /* boj_practice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = boj_practice; sourceTree = BUILT_PRODUCTS_DIR; };
-		E40DC1162A039F2200646764 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E40DC11E2A03F9BB00646764 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 		E40DC10A2A039F2200646764 = {
 			isa = PBXGroup;
 			children = (
-				E40DC1152A039F2200646764 /* boj_practice */,
+				E40DC1152A039F2200646764 /* boj_q11650 */,
 				E40DC1142A039F2200646764 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E40DC1152A039F2200646764 /* boj_practice */ = {
+		E40DC1152A039F2200646764 /* boj_q11650 */ = {
 			isa = PBXGroup;
 			children = (
-				E40DC1162A039F2200646764 /* main.swift */,
+				E40DC11E2A03F9BB00646764 /* main.swift */,
 			);
-			path = boj_practice;
+			path = boj_q11650;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +94,7 @@
 				TargetAttributes = {
 					E40DC1122A039F2200646764 = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -120,7 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E40DC1172A039F2200646764 /* main.swift in Sources */,
+				E40DC11F2A03F9BB00646764 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,10 +244,13 @@
 		E40DC11B2A039F2200646764 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q45H5LWRR7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "boj_practice/boj_practice-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -254,10 +258,12 @@
 		E40DC11C2A039F2200646764 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q45H5LWRR7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "boj_practice/boj_practice-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
