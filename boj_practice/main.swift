@@ -6,11 +6,10 @@
 //
 
 import Foundation
-let t = Int(readLine()!)!
-var i = 0
 var ans = 0
-while i < t{
-    i = i+5
-    ans+=1
+for _ in 0..<5{
+    var t = Int(readLine()!)!
+    ans += t
 }
 print(ans)
+
